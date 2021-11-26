@@ -1,1 +1,0 @@
-<script> localStorage.setItem("Canal");</script>
