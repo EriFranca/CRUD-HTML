@@ -4,7 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script> localStorage.setItem("Canal", "CFBCursos");</script>
+    <script> 
+    if(typeof(Storage)!="undefined"){
+        localStorage.setItem("Canal", "CFBCursos");
+        document.write(vcanal);
+    }else{
+        document.write("Sem suporte a Web Storage")
+    }
+        
+    
+    
+    </script>
     <!--<script> localStorage.removeItem("Canal");</script>-->
     
 
